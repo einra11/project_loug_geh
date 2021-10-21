@@ -177,7 +177,8 @@ function HomeSales (){
                             htmlString += '<th>' + 'Transaction Code' + '</th>';
                             htmlString += '<th>' + 'Customer' + '</th>';
                             htmlString += '<th>' + 'Transaction Description' + '</th>';
-                            htmlString += '<th>' + 'Barcode' + '</th>';
+                            htmlString += '<th>' + 'OR Code' + '</th>';
+                            htmlString += '<th>' + 'Total Quantity of Sales' + '</th>';
                             htmlString += '<th>' + 'Transaction Date' + '</th>';
                         htmlString += '</tr>';
 
@@ -187,6 +188,7 @@ function HomeSales (){
                             htmlString += '<td>' + data.dataEvents[index].tran_c_name + '</td>';
                             htmlString += '<td>' + data.dataEvents[index].tran_desc + '</td>';
                             htmlString += '<td>' + data.dataEvents[index].tran_OR + '</td>';
+                            htmlString += '<td>' + data.dataEvents[index].item_qty + '</td>';
                             htmlString += '<td>' + data.dataEvents[index].tran_created + '</td>';
                         htmlString += '</tr>';
 

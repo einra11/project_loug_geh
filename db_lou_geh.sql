@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 21, 2021 at 04:52 PM
+-- Generation Time: Oct 22, 2021 at 01:32 AM
 -- Server version: 10.4.20-MariaDB
 -- PHP Version: 8.0.9
 
@@ -100,7 +100,10 @@ INSERT INTO `tb_customers` (`id`, `cust_name`, `cust_address`, `cust_ctn`) VALUE
 (34, 'eqweqwe', '44234 qeqe', '345345'),
 (35, 'eqweqwe', '44234 qeqe', '345345'),
 (36, 'Test Tow4', 'qeqwe', '0956487'),
-(37, 'Test Tow46', 'qeqwe', '0956487');
+(37, 'Test Tow46', 'qeqwe', '0956487'),
+(38, 'test toto', 'Test localtion', '0921553322'),
+(39, 'test toto', 'Test localtion', '0921553322'),
+(40, 'test toto', 'Test localtion', '0921553322');
 
 -- --------------------------------------------------------
 
@@ -125,7 +128,8 @@ CREATE TABLE `tb_items` (
 
 INSERT INTO `tb_items` (`id`, `item_bcode`, `item_code`, `sup_code`, `item_product_desc`, `item_stock`, `item_srp`, `created_at`) VALUES
 (1, '1110202021', 'elc-fan', '001', 'Electric Fan Asahi', 799, 500, '2021-10-20 19:00:46'),
-(2, '1210202021', 'ips-mon', '002', 'IPS Monitor Asus', 99938, 10000, '2021-10-20 19:00:46');
+(2, '1210202021', 'ips-mon', '002', 'IPS Monitor Asus', 99938, 10000, '2021-10-20 19:00:46'),
+(3, '1310202021', 'led-monitor', '002', 'LED Monitor Aus', 897, 5200, '2021-10-20 19:00:46');
 
 -- --------------------------------------------------------
 
@@ -143,7 +147,7 @@ CREATE TABLE `tb_or` (
 --
 
 INSERT INTO `tb_or` (`id`, `or_cnt`) VALUES
-(1, 78);
+(1, 81);
 
 -- --------------------------------------------------------
 
@@ -192,7 +196,10 @@ INSERT INTO `tb_trans` (`id`, `tran_code`, `tran_c_name`, `tran_desc`, `item_cod
 (52, 'g35442021', 'Test Tow4', 'elc-fan Paid in Cash', 'elc-fan', 3, '75g35442021', '2021-10-21 16:43:54'),
 (53, 'g3442021', 'Test Tow46', 'ips-mon Paid in Cash', 'ips-mon', 3, '76g3442021', '2021-10-21 16:44:04'),
 (54, 'g3442021', 'Test Tow46', 'ips-mon Paid in Cash', 'ips-mon', 3, '77g3442021', '2021-10-21 16:44:04'),
-(55, 'g3442021', 'Test Tow46', 'ips-mon Paid in Cash', 'ips-mon', 3, '78g3442021', '2021-10-21 16:44:04');
+(55, 'g3442021', 'Test Tow46', 'ips-mon Paid in Cash', 'ips-mon', 3, '78g3442021', '2021-10-21 16:44:04'),
+(56, 'g35952021', 'test toto', 'led-monitor Paid in Cash', 'led-monitor', 3, '80g35952021', '2021-10-22 01:26:59'),
+(57, 'g35952021', 'test toto', 'led-monitor Paid in Cash', 'led-monitor', 3, '80g35952021', '2021-10-22 01:26:59'),
+(58, 'g35952021', 'test toto', 'led-monitor Paid in Cash', 'led-monitor', 3, '81g35952021', '2021-10-22 01:26:59');
 
 --
 -- Indexes for dumped tables
@@ -242,13 +249,13 @@ ALTER TABLE `suppliers`
 -- AUTO_INCREMENT for table `tb_customers`
 --
 ALTER TABLE `tb_customers`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
 
 --
 -- AUTO_INCREMENT for table `tb_items`
 --
 ALTER TABLE `tb_items`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `tb_or`
@@ -260,7 +267,7 @@ ALTER TABLE `tb_or`
 -- AUTO_INCREMENT for table `tb_trans`
 --
 ALTER TABLE `tb_trans`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=56;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=59;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
