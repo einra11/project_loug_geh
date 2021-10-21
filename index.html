@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <title>Lou Geh</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="Contents/extensions/bootstrap4/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="Contents/css/main.css">
+</head>
+
+<body>
+   <div class="col-lg-12 row jumbo-container m-0 pl-0 pr-0">
+        <div class="col-md-6 mb-3">
+            <h1 class="display-4">Suppliers</h1>
+            <div class="table-responsive">
+                <table id="tbsuppliers" style="width: 100%;" class="table table-bordered table-striped" cellspacing="0">
+                </table>
+            </div>
+        </div>
+        <div class="col-md-6 mb-3">
+            <h1 class="display-4">Make Sale</h1>
+            <button id="btn_submit" btn-process="add" class="btn btn-primary">Enter</button>
+            <form id="frmAddMember">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="text-small text-600">Sold to</label><br>
+                            <input type="text" id="txtSoldto" class="form-control form-control-sm">
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-8">
+                                <div class="form-group">
+                                    <label class="text-small text-600">Address</label><br>
+                                    <input type="text" id="txtCAddress" class="form-control form-control-sm">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label class="text-small text-600">Contact Number</label><br>
+                                    <input type="text" id="txtCCtnNo" class="form-control form-control-sm">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <h3 class="display-6">Selected Items</h3>
+                        <ul id="itemlist" class="list-group">
+                        </ul>
+                    </div>
+                   
+                </div>
+                </div>
+            </form>
+       </div>
+   </div>
+   <div class="col-lg-12 row jumbo-container m-0 pl-0 pr-0">
+        <div class="col-md-6 mb-3">
+            <h1 class="display-4">Inventory</h1>
+            <label class="text-small text-600">Search Item</label><br>
+            <input type="text" id="txtSearchItem" class="form-control form-control-sm">
+        <div class="table-responsive">
+            <table id="tbitem" style="width: 100%;" class="table table-striped" cellspacing="0">
+                    <tr>
+                    </tr>
+            </table>
+        </div>
+    </div>
+</div>
+<div class="col-lg-12 row jumbo-container m-0 pl-0 pr-0">
+    <div class="col-md-6 mb-3">
+        <h1 class="display-4">Sales</h1>
+    <div class="table-responsive" style="max-height: 500px;">
+        <table id="tbsales" style="width: 100%;" class="table table-bordered table-striped" cellspacing="0">
+                <tr>
+                </tr>
+        </table>
+    </div>
+</div>
+</div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="Contents/extensions/jquery/jquery.min.js"></script>
+    <script src="Contents/extensions/bootstrap4/js/popper.min.js" crossorigin="anonymous"></script>
+    <script src="Contents/extensions/bootstrap4/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
